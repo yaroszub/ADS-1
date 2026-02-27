@@ -43,7 +43,7 @@ uint64_t sumPrime(uint64_t hbound) {
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
 uint64_t schet = 0;
 uint64_t d = lbound;
-while(!checkPrime(d)&& p <= hbound){
+while(!checkPrime(d)&& d <= hbound){
   d++;
 }
   while(d <= hbound) {
@@ -53,5 +53,4 @@ while(!checkPrime(d)&& p <= hbound){
     }
     d = f;
         }
-  return schet;
-}
+  return schet;}
